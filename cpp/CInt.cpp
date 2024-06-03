@@ -2,6 +2,7 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <filesystem>
 #include "CInt.h"
 #include "CVar.h"
 
@@ -16,23 +17,27 @@ CInt::CInt(std::string &s) : CVar() {
     this->value = 0;
 }
 
-CInt::CInt(std::string name, std::string path, int lineToReference, int value, bool getFromConst) : CVar(name, path, lineToReference){
+CInt::CInt(std::string n, std::string path, int lineToReference, int value, bool getFromConst) : CVar(name, path, lineToReference) {
+    this->name = n;
+    this->path = path;
+    this->lineToReference = lineToReference;
     if (!getFromConst) {
         this->value = value;
     }
     std::ifstream inFile;
     inFile.open(path);
     if (inFile.fail()) {
-        std::cerr << "In Thingy Failed" << std::endl;
+        std::cerr << "In Thingy Failed in CInt constructor creation of " << n << "." << std::endl;
     }
     std::vector<std::string> lineArray;
     int lineWeAreAt = 0;
     while (!inFile.eof()) {
         getline(inFile, lineArray[lineWeAreAt]);
+        lineWeAreAt++;
     }
 
     std::ofstream outFile;
-    outFile.open(this->getPath());
+    outFile.open(path);
     if (outFile.fail()) {
         std::cerr << "Out Thingy Failed" << std::endl;
     } else {
@@ -77,10 +82,34 @@ void CInt::updateValue() {
     }
     inFile.close();
     outFile.close();
+
 }
 
 void CInt::setValue(int n) {
     this->value = n;
+    std::ifstream inFile;
+    inFile.open(this->getPath());
+    if (inFile.fail()) {
+        std::cerr << "In Thingy Failed" << std::endl;
+    }
+    std::vector<std::string> lineArray;
+    int lineWeAreAt = 0;
+    while (!inFile.eof()) {
+        getline(inFile, lineArray[lineWeAreAt]);
+    }
+    lineArray[this->getLineToReference()] = std::to_string(n);
+    std::ofstream outFile;
+    outFile.open(this->getPath());
+    if (outFile.fail()) {
+        std::cerr << "Out Thingy Failed" << std::endl;
+    } else {
+        inFile.close();
+    }
+    for (int i = 0; i < lineArray.size(); i++) {
+        outFile << lineArray[i];
+    }
+    inFile.close();
+    outFile.close();
 }
 
 int CInt::getValue() {
