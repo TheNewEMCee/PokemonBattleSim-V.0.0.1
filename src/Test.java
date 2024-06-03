@@ -33,12 +33,38 @@ public class Test {
         if ((line = br.readLine()) != null || br.readLine() != "") {
             bw.newLine();
         } /* Adding new lines */
-        PrintWriter pr = new PrintWriter(bw);
+        if ((line = br.readLine()) == null || br.readLine() == "") {
+            File inputFile2 = new File("/Users/christineswann/Documents/GitHub/PokemonBattleSim-V.0.0.1/text/Data1.txt");
+            File tempFile2 = new File("/Users/christineswann/Documents/GitHub/PokemonBattleSim-V.0.0.1/text/myTempFile.txt");
+        
+            BufferedReader reader2 = new BufferedReader(new FileReader(inputFile2));
+            BufferedWriter writer2 = new BufferedWriter(new FileWriter(tempFile2));
+
+            String currentLine2 = "";
+            String lineToRemove2;
+            while ((currentLine2 = reader2.readLine()) == null) {
+                String trimmedLine2 = currentLine2.trim();
+                lineToRemove2 = "";
+                if (trimmedLine2.equals(lineToRemove2)) continue;
+                writer2.write(currentLine2 + System.getProperty("line.separator"));
+            }
+            writer2.close(); 
+            reader2.close(); 
+            boolean successful2 = tempFile2.renameTo(inputFile2);
+        }
         
         String line4 = Files.readAllLines(Paths.get(file.getAbsolutePath())).get(4);
         System.out.println(line4);
         int line4Length = (Files.readAllLines(Paths.get(file.getAbsolutePath())).get(4)).length();
         
+        PrintWriter pr = new PrintWriter(bw);
+        pr.write("hello noobs");
+
+        fis.close();
+        isr.close();
+        pr.close();
+        bw.close();
+        br.close();
 
         File inputFile = new File("/Users/christineswann/Documents/GitHub/PokemonBattleSim-V.0.0.1/text/Data1.txt");
         File tempFile = new File("/Users/christineswann/Documents/GitHub/PokemonBattleSim-V.0.0.1/text/myTempFile.txt");
@@ -57,18 +83,6 @@ public class Test {
         writer.close(); 
         reader.close(); 
         boolean successful = tempFile.renameTo(inputFile);
-
-        pr.write("newthings");
-
-
-
-
-        fis.close();
-        isr.close();
-        pr.close();
-        bw.close();
-        br.close();
-
 
     }
 }
