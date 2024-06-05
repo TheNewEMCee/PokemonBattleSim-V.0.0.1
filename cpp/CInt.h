@@ -1,22 +1,14 @@
-#include <iostream>
-#include <fstream>
-#include "CVar.h"
-#ifndef UNTITLED_CINT_H
-#define UNTITLED_CINT_H
+//
+// Created by mclar16 on 2024-06-05.
+//
+
+#ifndef POKEMONBATTLESIM_V0_0_4_CINT_H
+#define POKEMONBATTLESIM_V0_0_4_CINT_H
 
 
-class CInt : public CVar {
-private:
-    int value;
-public:
-    CInt();
-    CInt(std::string &s);
-    CInt(std::string name, std::string path, int lineToReference, int value, bool getFromConst = true);
-    ~CInt();
-    void updateValue();
-    void setValue(int n);
-    int getValue();
+class CInt {
+
 };
 
 
-#endif //UNTITLED_CINT_H
+#endif //POKEMONBATTLESIM_V0_0_4_CINT_H

@@ -36,7 +36,7 @@ public class Test {
         if ((line = br.readLine()) == null || br.readLine() == "") {
             File inputFile2 = new File("/Users/christineswann/Documents/GitHub/PokemonBattleSim-V.0.0.1/text/Data1.txt");
             File tempFile2 = new File("/Users/christineswann/Documents/GitHub/PokemonBattleSim-V.0.0.1/text/myTempFile.txt");
-        
+
             BufferedReader reader2 = new BufferedReader(new FileReader(inputFile2));
             BufferedWriter writer2 = new BufferedWriter(new FileWriter(tempFile2));
 
@@ -48,15 +48,15 @@ public class Test {
                 if (trimmedLine2.equals(lineToRemove2)) continue;
                 writer2.write(currentLine2 + System.getProperty("line.separator"));
             }
-            writer2.close(); 
-            reader2.close(); 
+            writer2.close();
+            reader2.close();
             boolean successful2 = tempFile2.renameTo(inputFile2);
         }
-        
+
         String line4 = Files.readAllLines(Paths.get(file.getAbsolutePath())).get(4);
         System.out.println(line4);
         int line4Length = (Files.readAllLines(Paths.get(file.getAbsolutePath())).get(4)).length();
-        
+
         PrintWriter pr = new PrintWriter(bw);
         pr.write("hello noobs");
 
@@ -68,7 +68,7 @@ public class Test {
 
         File inputFile = new File("/Users/christineswann/Documents/GitHub/PokemonBattleSim-V.0.0.1/text/Data1.txt");
         File tempFile = new File("/Users/christineswann/Documents/GitHub/PokemonBattleSim-V.0.0.1/text/myTempFile.txt");
-        
+
         BufferedReader reader = new BufferedReader(new FileReader(inputFile));
         BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
 
@@ -80,8 +80,8 @@ public class Test {
             if (trimmedLine.equals(lineToRemove)) continue;
             writer.write(currentLine + System.getProperty("line.separator"));
         }
-        writer.close(); 
-        reader.close(); 
+        writer.close();
+        reader.close();
         boolean successful = tempFile.renameTo(inputFile);
 
     }
