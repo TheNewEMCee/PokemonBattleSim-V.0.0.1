@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
-#ifndef UNTITLED_CVAR_H
-#define UNTITLED_CVAR_H
+#ifndef POKEMONBATTLESIM_V0_0_1_CVAR_H
+#define POKEMONBATTLESIM_V0_0_1_CVAR_H
 
 
 class CVar {
@@ -22,4 +22,4 @@ public:
 };
 
 
-#endif //UNTITLED_CVAR_H
+#endif //POKEMONBATTLESIM_V0_0_1_CVAR_H

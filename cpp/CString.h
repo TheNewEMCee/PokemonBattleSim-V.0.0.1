@@ -1,8 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include "CVar.h"
-#ifndef UNTITLED_CString_H
-#define UNTITLED_CString_H
+#ifndef POKEMONBATTLESIM_V0_0_1_CString_H
+#define POKEMONBATTLESIM_V0_0_1_CString_H
 
 
 class CString : public CVar {
@@ -18,4 +18,4 @@ public:
 };
 
 
-#endif //UNTITLED_CString_H
+#endif //POKEMONBATTLESIM_V0_0_1_CString_H
