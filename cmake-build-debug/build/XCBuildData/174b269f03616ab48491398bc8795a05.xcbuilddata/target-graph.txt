@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+ZERO_CHECK in PokemonBattleSim_V0_0_4, no dependencies
+PokemonBattleSim_V0_0_4 in PokemonBattleSim_V0_0_4, depends on:
+ZERO_CHECK in PokemonBattleSim_V0_0_4 (explicit)

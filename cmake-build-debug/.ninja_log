@@ -1,6 +1,8 @@
 # ninja log v6
-96	2008	7393036276402869	build.ninja	3cf9ae7c1aecd4be
-109	3570	7393036287028962	CMakeFiles/PokemonBattleSim_V0_0_4.dir/cpp/CVar.cpp.obj	fdc0bae70aa9f427
-120	4103	7393036287185527	CMakeFiles/PokemonBattleSim_V0_0_4.dir/cpp/CString.cpp.obj	a155932e35946c07
-58	4140	7393036286560034	CMakeFiles/PokemonBattleSim_V0_0_4.dir/cpp/main.cpp.obj	404607eb4169ca
+96	2008	1717631066062637089	build.ninja	3cf9ae7c1aecd4be
 4146	6458	7393036327349145	PokemonBattleSim_V0_0_4.exe	4f67a7804e5643e
+1	696	1717631066321567679	CMakeFiles/PokemonBattleSim_V0_0_4.dir/cpp/CVar.cpp.o	4fbddf47f60cce43
+1	704	1717631066321688761	CMakeFiles/PokemonBattleSim_V0_0_4.dir/cpp/CString.cpp.o	1476f78346cb8e4e
+1	722	1717631066321344013	CMakeFiles/PokemonBattleSim_V0_0_4.dir/cpp/main.cpp.o	b985949b492ae60d
+1	728	1717631066321804094	CMakeFiles/PokemonBattleSim_V0_0_4.dir/cpp/CInt.cpp.o	fa2676f5a3d9add1
+729	758	1717631067049100149	PokemonBattleSim_V0_0_4	5ced45ae5e6d18ca

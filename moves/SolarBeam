@@ -1,0 +1,27 @@
+Move structure would be like this:
+
+Name
+Power
+Description
+std::string path;
+int lineToReference;
+std::string name;
+std::string type;
+std::string description;
+int power;
+bool doesRepeat;
+int minRepetitions;
+int maxRepetitions;
+int movePriority;
+double accuracy;
+bool hitsMultipleTimes;
+int minHitsPerTurn;
+int maxHitsPerTurn;
+std::string stat1AffectedSelf;
+std::string stat2AffectedSelf;
+std::string stat3AffectedSelf;
+std::string stat4AffectedSelf;
+std::string stat1AffectedOther;
+std::string stat2AffectedOther;
+std::string stat3AffectedOther;
+std::string stat4AffectedOther;

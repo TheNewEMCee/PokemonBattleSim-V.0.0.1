@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		26C7CBE50FDE4767878B2903 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D6EE6FE8107046B9B5FD5029 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				DE31DC45AA5DA171FF1B47F4 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				8392FEFCCD32428882A45828 /* PBXTargetDependency */,
+				7EA6CB01404F400686714F2F /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D9FE4CBC20584C9C85E3E4B3 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BF07253F547A46DBAAEF7CEB /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				B8CC8C88BA2C89D570137C39 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1F6CF5CCECEE41A8B2897F34 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/main.cpp */ = {isa = PBXBuildFile; fileRef = 4B7C20957BB541D889CAF81A /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/main.cpp */; };
+		2B6AE3828AA94556878E03D6 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CString.cpp */ = {isa = PBXBuildFile; fileRef = A3661529E11F42239DC38B8F /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CString.cpp */; };
+		4D1B125370BB4665B5C4AE4F /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CInt.cpp */ = {isa = PBXBuildFile; fileRef = 35DE815930F84D3C9DD7A6E1 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CInt.cpp */; };
+		6BB5F7A19D4742C8A2809A98 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/Move.h */ = {isa = PBXBuildFile; fileRef = A8F94FBBC9A14B569DE79B5C /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/Move.h */; };
+		6DAB5EE1DF5643BC8CBAF0F4 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CVar.cpp */ = {isa = PBXBuildFile; fileRef = 8BC04CA27E51427BA069940F /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CVar.cpp */; };
+		7A52356473AD4734BBB40D83 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/Move.cpp */ = {isa = PBXBuildFile; fileRef = EEC8328A27B04DF2B65D5B6A /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/Move.cpp */; };
+		A755ED8C38D0468987054925 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 97FC2BD5BCCA4F7B80737552 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		14B1E1BC1FB9491A89D6B199 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		3267898F111F4939A39E9BBB /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		BB090775497C4B4F9F79C3CD /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		EDAEE1FAF6904E4E9D3E84C0 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		44FA526C2DB64749B8FEA381 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54761FC8038B4D23BD8AF0B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9FE4CBC20584C9C85E3E4B3;
+			remoteInfo = ZERO_CHECK;
+		};
+		7E59D0204B1A435E84EBF40B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54761FC8038B4D23BD8AF0B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12796559B9B349958F455993;
+			remoteInfo = PokemonBattleSim_V0_0_4;
+		};
+		BD48A26A045142E29A3D1086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54761FC8038B4D23BD8AF0B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9FE4CBC20584C9C85E3E4B3;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35DE815930F84D3C9DD7A6E1 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CInt.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CInt.cpp; path = CInt.cpp; sourceTree = SOURCE_ROOT; };
+		4B7C20957BB541D889CAF81A /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		8BC04CA27E51427BA069940F /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CVar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CVar.cpp; path = CVar.cpp; sourceTree = SOURCE_ROOT; };
+		97FC2BD5BCCA4F7B80737552 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A3661529E11F42239DC38B8F /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CString.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CString.cpp; path = CString.cpp; sourceTree = SOURCE_ROOT; };
+		A8F94FBBC9A14B569DE79B5C /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/Move.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Move.h; path = Move.h; sourceTree = SOURCE_ROOT; };
+		C300FDA4CEBF4C75B3114C6A /* PokemonBattleSim_V0_0_4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = PokemonBattleSim_V0_0_4; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7721CBD1A924CF184D1DBC0 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		EEC8328A27B04DF2B65D5B6A /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/Move.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Move.cpp; path = Move.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9CE51B8F712474C86FE165D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26BB781729D24A38B14D2E28 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				35DE815930F84D3C9DD7A6E1 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CInt.cpp */,
+				A3661529E11F42239DC38B8F /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CString.cpp */,
+				8BC04CA27E51427BA069940F /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CVar.cpp */,
+				EEC8328A27B04DF2B65D5B6A /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/Move.cpp */,
+				4B7C20957BB541D889CAF81A /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		375305CEDE1B4A9CAB75C8B0 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8F94FBBC9A14B569DE79B5C /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/Move.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		55A5899533EB4839B878ED32 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5FA70C18BC4A4EE7B6595ECC = {
+			isa = PBXGroup;
+			children = (
+				AE847178136E4A9A940DFAAC /* PokemonBattleSim_V0_0_4 */,
+				8A9B3B62D2304D54BE646A7B /* ALL_BUILD */,
+				F0B2D3E657614619A2AC0CFA /* Products */,
+				EF65330569E9473AB7B41892 /* Frameworks */,
+				55A5899533EB4839B878ED32 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		8A9B3B62D2304D54BE646A7B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				E939A3A39CEC411B8D0B3B07 /* CMake Rules */,
+				C7721CBD1A924CF184D1DBC0 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		AE847178136E4A9A940DFAAC /* PokemonBattleSim_V0_0_4 */ = {
+			isa = PBXGroup;
+			children = (
+				26BB781729D24A38B14D2E28 /* Source Files */,
+				375305CEDE1B4A9CAB75C8B0 /* Header Files */,
+				97FC2BD5BCCA4F7B80737552 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CMakeLists.txt */,
+			);
+			name = PokemonBattleSim_V0_0_4;
+			sourceTree = "<group>";
+		};
+		E939A3A39CEC411B8D0B3B07 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		EF65330569E9473AB7B41892 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0B2D3E657614619A2AC0CFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C300FDA4CEBF4C75B3114C6A /* PokemonBattleSim_V0_0_4 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12796559B9B349958F455993 /* PokemonBattleSim_V0_0_4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E608BA483C454D86A6B72DA4 /* Build configuration list for PBXNativeTarget "PokemonBattleSim_V0_0_4" */;
+			buildPhases = (
+				4F256A97AB8149109B0D6C0A /* Sources */,
+				D9CE51B8F712474C86FE165D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAFC1ECFC002474DB071CC00 /* PBXTargetDependency */,
+			);
+			name = PokemonBattleSim_V0_0_4;
+			productName = PokemonBattleSim_V0_0_4;
+			productReference = C300FDA4CEBF4C75B3114C6A /* PokemonBattleSim_V0_0_4 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54761FC8038B4D23BD8AF0B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 556395140806416F812ADC0B /* Build configuration list for PBXProject "PokemonBattleSim_V0_0_4" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				EDAEE1FAF6904E4E9D3E84C0 /* Debug */,
+				14B1E1BC1FB9491A89D6B199 /* Release */,
+				3267898F111F4939A39E9BBB /* MinSizeRel */,
+				BB090775497C4B4F9F79C3CD /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 5FA70C18BC4A4EE7B6595ECC;
+			projectDirPath = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1";
+			projectRoot = "";
+			targets = (
+				26C7CBE50FDE4767878B2903 /* ALL_BUILD */,
+				12796559B9B349958F455993 /* PokemonBattleSim_V0_0_4 */,
+				D9FE4CBC20584C9C85E3E4B3 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B8CC8C88BA2C89D570137C39 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug
+  make -f /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug
+  make -f /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug
+  make -f /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug
+  make -f /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		DE31DC45AA5DA171FF1B47F4 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F256A97AB8149109B0D6C0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1B125370BB4665B5C4AE4F /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CInt.cpp */,
+				2B6AE3828AA94556878E03D6 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CString.cpp */,
+				6DAB5EE1DF5643BC8CBAF0F4 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CVar.cpp */,
+				7A52356473AD4734BBB40D83 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/Move.cpp */,
+				1F6CF5CCECEE41A8B2897F34 /* /Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EA6CB01404F400686714F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9FE4CBC20584C9C85E3E4B3 /* ZERO_CHECK */;
+			targetProxy = 44FA526C2DB64749B8FEA381 /* PBXContainerItemProxy */;
+		};
+		8392FEFCCD32428882A45828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12796559B9B349958F455993 /* PokemonBattleSim_V0_0_4 */;
+			targetProxy = 7E59D0204B1A435E84EBF40B /* PBXContainerItemProxy */;
+		};
+		BAFC1ECFC002474DB071CC00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9FE4CBC20584C9C85E3E4B3 /* ZERO_CHECK */;
+			targetProxy = BD48A26A045142E29A3D1086 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05F0145ECBDF4D5889996874 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/build";
+			};
+			name = Debug;
+		};
+		13BE00D122464E8AB6FD34AA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		16B6A6DF95BA47BCA4A78C67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		17BF8102E6AE48F695866CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		1FADD380CEAC4AF98546457A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/build";
+			};
+			name = Release;
+		};
+		3DD83BE3D8684217B23A51A0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++2b' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PokemonBattleSim_V0_0_4;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/build/PokemonBattleSim_V0_0_4.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4073245540A54E6890099AE9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++2b' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PokemonBattleSim_V0_0_4;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/build/PokemonBattleSim_V0_0_4.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5B72C60DA2DD4054AAC09A2C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/build";
+			};
+			name = MinSizeRel;
+		};
+		7B7489176C9F4084A67BE782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++2b' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PokemonBattleSim_V0_0_4;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/build/PokemonBattleSim_V0_0_4.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		89F89E3E6D72402794D71F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9A48B5BEE8AA4E14B28C3D4F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9E93AC1B3FDD4FDEBA26AFAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++2b' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = PokemonBattleSim_V0_0_4;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/build/PokemonBattleSim_V0_0_4.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		ACEB2F25D2C44A588CFC2A83 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B1A2482BA60C4F84B11FA083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F12E76461A4F416888CDE45D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F169ADFCBBAA4970B098F38C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/cmake-build-debug/build";
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		556395140806416F812ADC0B /* Build configuration list for PBXProject "PokemonBattleSim_V0_0_4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F0145ECBDF4D5889996874 /* Debug */,
+				1FADD380CEAC4AF98546457A /* Release */,
+				5B72C60DA2DD4054AAC09A2C /* MinSizeRel */,
+				F169ADFCBBAA4970B098F38C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BF07253F547A46DBAAEF7CEB /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17BF8102E6AE48F695866CCC /* Debug */,
+				B1A2482BA60C4F84B11FA083 /* Release */,
+				ACEB2F25D2C44A588CFC2A83 /* MinSizeRel */,
+				F12E76461A4F416888CDE45D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D6EE6FE8107046B9B5FD5029 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F89E3E6D72402794D71F14 /* Debug */,
+				16B6A6DF95BA47BCA4A78C67 /* Release */,
+				9A48B5BEE8AA4E14B28C3D4F /* MinSizeRel */,
+				13BE00D122464E8AB6FD34AA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E608BA483C454D86A6B72DA4 /* Build configuration list for PBXNativeTarget "PokemonBattleSim_V0_0_4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E93AC1B3FDD4FDEBA26AFAA /* Debug */,
+				7B7489176C9F4084A67BE782 /* Release */,
+				3DD83BE3D8684217B23A51A0 /* MinSizeRel */,
+				4073245540A54E6890099AE9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54761FC8038B4D23BD8AF0B1 /* Project object */;
+}
