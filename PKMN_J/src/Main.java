@@ -16,13 +16,6 @@ public class Main {
     
     public static void main(String[] args) throws IOException{
         File file = new File("PKMN_J/JText/readFrom.txt");
-        FileInputStream fis = new FileInputStream(file);
-        InputStreamReader isr = new InputStreamReader(fis);
-        BufferedReader br = new BufferedReader(isr);
-        //String line = br.readLine();
-        FileWriter fr = new FileWriter(file, true);
-        BufferedWriter bw = new BufferedWriter(fr);
-        PrintWriter pr = new PrintWriter(bw);
 
 
 
@@ -32,14 +25,14 @@ public class Main {
         int lineX = userInput.nextInt();
         String lineResult = readLineX(lineX, file);
         System.out.println("\nLine "+ lineX +" reads:\n"+ lineResult + "\n");
-        System.out.println("Would you like to edit this line?\n");
-        String yORn = new String();
-        //yORn = userInput.nextLine();
-        yORn = "y";
+        System.out.println("Would you like to delete this line?\n");
+        String yORn = userInput.nextLine();
+        yORn = userInput.nextLine();
 
         if( (yORn.equalsIgnoreCase("yes")) || (yORn.equalsIgnoreCase("y"))){
+            
             File tempFile = new File("PKMN_J/JText/tempFile.txt");
-            /*BufferedReader reader = new BufferedReader(new FileReader(file));
+            BufferedReader reader = new BufferedReader(new FileReader(file));
             BufferedWriter writer = new BufferedWriter(new FileWriter(tempFile));
 
             String currentLine = lineResult;
@@ -48,36 +41,46 @@ public class Main {
                 String trimmedLine = currentLine.trim();
                 lineToRemove = lineResult;
                 if (trimmedLine.equals(lineToRemove)) continue;
-               // writer.write(currentLine +  pr.write("replacement"));
+                writer.write(currentLine +  System.getProperty("line.separator"));
             }
             writer.close(); 
             reader.close(); 
-            boolean successful = tempFile.renameTo(file);*/
-            System.out.println("in yes");
-            Scanner sc = new Scanner(file);
-            StringBuffer buffer = new StringBuffer();
-            while (sc.hasNextLine()) {
-                buffer.append(sc.nextLine()+System.lineSeparator());
-             }
-             String fileContents = buffer.toString();
-            
-            String newLine = userInput.nextLine();
-            fileContents = fileContents.replaceAll(lineResult, newLine);
-            FileWriter writer = new FileWriter(file);
-            writer.append(fileContents);
-            writer.flush();
-
-
-
-
+            boolean successful = tempFile.renameTo(file);
+            System.out.println("Line deleted");
+        
         }
         else if( (yORn.equalsIgnoreCase("no")) || (yORn.equalsIgnoreCase("n")) ){
-            System.out.println("\nLine "+ lineX +" reads:\n"+ lineResult + "\n");
+            System.out.println("The line has not been deleted");
         }
-        /*else{
+        else{
             System.out.println("Not a valid response");
-        }*/
-        userInput.close();
+        }
+        
+    
+        System.out.println("Would you like to add a line?\n");
+        String yORn2 = userInput.nextLine();
+
+        if((yORn2.equalsIgnoreCase("yes")) || (yORn2.equalsIgnoreCase("y"))){
+            System.out.println("What would you like to add?");
+            String toAdd = userInput.nextLine();
+                FileWriter fr = new FileWriter(file, true);
+                BufferedWriter bw = new BufferedWriter(fr);
+                PrintWriter pr = new PrintWriter(bw);
+                pr.write(toAdd);
+                pr.close();
+                bw.close();
+                fr.close();
+            System.out.println(toAdd + " added to the file. ");
+        }
+        else if((yORn2.equalsIgnoreCase("yes")) || (yORn2.equalsIgnoreCase("y"))){
+            System.out.println("Nothing has been added to the file.");
+        }
+        else{
+            System.out.println("Not a valid response");
+        }
+        
+
+
     }
 
     public static String readLineX(int lineX, File file) throws IOException{
