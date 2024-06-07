@@ -79,13 +79,21 @@ public class Main {
             System.out.println("Not a valid response");
         }
         
-
+        System.out.println("The file reads:\n");
+        printFile(file);
 
     }
 
     public static String readLineX(int lineX, File file) throws IOException{
         String redLine = Files.readAllLines(Paths.get(file.getAbsolutePath())).get(lineX - 1); /*Read specific lines */
         return redLine;
+    }
+    public static void printFile(File file)throws IOException{
+        Scanner myReader = new Scanner(file);
+        while (myReader.hasNextLine()) {
+        String data = myReader.nextLine();
+        System.out.println(data);
+      }
     }
 }
 
