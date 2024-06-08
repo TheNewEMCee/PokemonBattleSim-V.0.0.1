@@ -11,6 +11,7 @@ private:
 public:
     CString();
     CString(std::string name, std::string path, int lineToReference, int value, bool getFromConst = false);
+    CString(const CString &cs);
     ~CString();
     void updateValue();
     void setValue(std::string n);

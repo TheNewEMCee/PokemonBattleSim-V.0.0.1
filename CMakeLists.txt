@@ -9,4 +9,12 @@ add_executable(PokemonBattleSim_V0_0_4 main.cpp
         CInt.cpp
         main.cpp
         Move.cpp
-        Move.h)
+        Move.h
+        CTxt.cpp
+        CTxt.h
+        CFile.cpp
+        CFile.h
+        CJson.cpp
+        CJson.h
+        CCpp.cpp
+        CCpp.h)

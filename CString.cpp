@@ -48,6 +48,14 @@ CString::CString(std::string name, std::string path, int lineToReference, int va
     outFile.close();
 
 }
+
+CString::CString(const CString &cs) : CVar(cs) {
+    this->name = cs.name;
+    this->path = cs.path;
+    this->value = cs.value;
+    this->lineToReference = cs.lineToReference;
+}
+
 CString::~CString() {
     std::cout << "CString " << this->name << " destroyed." << std::endl;
 }

@@ -6,11 +6,18 @@
 
 CVar::CVar() {}
 
-CVar::CVar(std::string name, std::string path, int lineToReference) {
-    this->name = name;
-    this->path = path;
-    this->lineToReference= lineToReference;
+CVar::CVar(const std::string &name, const std::string &path, int lineToReference) {
+    this->setName(name);
+    this->setPath(path);
+    this->setLineToReference(lineToReference);
 }
+
+CVar::CVar(const CVar &cv) {
+    this->setName(cv.getName());
+    this->setPath(cv.getPath());
+    this->setLineToReference(cv.getLineToReference());
+}
+
 CVar::~CVar() {
     std::cout << "CVar " << this->name << " destroyed." << std::endl;
 }
@@ -27,14 +34,14 @@ void CVar::setLineToReference(int l) {
     this->lineToReference = l;
 }
 
-std::string CVar::getName() {
+std::string CVar::getName() const {
     return this->name;
 }
 
-std::string CVar::getPath() {
+std::string CVar::getPath() const {
     return this->path;
 }
 
-int CVar::getLineToReference() {
+int CVar::getLineToReference() const {
     return this->lineToReference;
 }

@@ -22,7 +22,7 @@ int main() {
     //Try to see if CInt works... Hopefully!
     std::string v = "hehy";
     //CInt CInt1(v);
-    CInt CInt1("CInt1", "../text/CInts.txt", 2, 6, true);
+    CInt CInt1("CInt1", "/Users/mylesclark/VSCode/ICS4UThing/PokemonBattleSim-V.0.0.1/CInts.txt", 2, 6, true);
     std::cout << "Hello!" << std::endl;
     std::cout << "Name: " << CInt1.getName() << std::endl;
     std::cout << "Stored at " << CInt1.getPath() << ", line " << CInt1.getLineToReference() << std::endl;

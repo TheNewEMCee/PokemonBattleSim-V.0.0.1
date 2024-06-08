@@ -11,14 +11,16 @@ protected:
     int lineToReference;
 public:
     CVar();
-    CVar(std::string name, std::string path, int lineToReference);
+    CVar(const std::string &name, const std::string &path, int lineToReference);
+    CVar(const CVar &cv);
     ~CVar();
     void setName(std::string n);
     void setPath(std::string p);
     void setLineToReference(int l);
-    std::string getName();
-    std::string getPath();
-    int getLineToReference();
+    std::string getName() const;
+    std::string getPath() const;
+    int getLineToReference() const;
+    void printPathContents(int start, int finish, bool isBeautified = true);
 };
 
 
