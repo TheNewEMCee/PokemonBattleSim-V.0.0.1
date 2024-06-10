@@ -38,28 +38,38 @@ CInt::CInt(std::string name, std::string path, int lineToReference, int value, b
     int lineWeAreAt = 0;
     while (getline(inFile, line)) {
         lineWeAreAt++;
+        if (lineWeAreAt <= this->getLineToReference()) {
+            lineArray.push_back(line);
+            std::cout << "alijfkdnld" << std::endl;
+            }
     }
+    inFile.close();
     while (lineToReference >= lineArray.size()) {
         std::cerr << "Error: lineToReference is out of range." << std::endl << "Add lines? Y/N" << std::endl;
         std::string userInput;
         std::cin >> userInput;
         bool goOn = false;
+
         do {
             if (userInput == "Y" || userInput == "y") {
-                inFile.close();
+                std::cout << "Gotten here!" << std::endl;
                 std::ofstream outFile;
                 outFile.open(path);
+                std::cout << "Gotten here, too!" << std::endl;
                 if (outFile.fail()) {
                     std::cerr << "Out Thingy Failed" << std::endl;
                     std::cerr << "Error: " << std::strerror(errno) << std::endl;
                 }
-                for (int i = 0; i <= lineToReference; i++) {
-                    outFile << "";
+                std::cout << "And here!" << std::endl;
+                for (int i = 0; i <= this->getLineToReference(); i++) {
+                    outFile << std::endl;
+                    std::cout << "Here, as well!" << std::endl;
                 }
-                if (getFromConst) {
-                    this->value = stoi(lineArray.at(lineToReference));
-                }
+                std::cout << "Huh?" << std::endl;
+                outFile.close();
                 goOn = true;
+
+
             } else if (userInput == "N" || userInput == "n") {
                 int newLineToReference;
                 std::cout << "What should the new line to reference be? The maximum is " << lineArray.size() - 1 << "." << std::endl;
@@ -68,22 +78,35 @@ CInt::CInt(std::string name, std::string path, int lineToReference, int value, b
                 return;
             }
             lineWeAreAt = 0;
-            inFile.seekg(0, std::ios::beg);
-
-            while (getline(inFile, line)) {
+            std::ifstream inFile2;
+            inFile2.open(this->getPath());
+            inFile2.seekg(0, std::ios::beg);
+            lineArray.clear();
+            while (getline(inFile2, line)) {
                 lineArray.push_back(line);
                 lineWeAreAt++;
             }
+            std::cout << "goOn = " << goOn << std::endl;
+            std::cout << "lineArray's size is " << lineArray.size() << std::endl;
+            inFile2.close();
         } while (!goOn);
+        lineArray.clear();
+        while (getline(inFile, line)) {
+            lineArray.push_back(line);
+            lineWeAreAt++;
+        }
     }
+    std::cout << "Bongo" << std::endl;
     lineWeAreAt = 0;
     inFile.seekg(0, std::ios::beg);
+    lineArray.clear();
     while (getline(inFile, line)) {
         lineArray.push_back(line);
         lineWeAreAt++;
     }
-    inFile.close();
-
+    if (getFromConst) {
+        this->setValue(stoi(lineArray.at(lineToReference)));
+    }
     std::ofstream outFile;
     outFile.open(path);
     if (outFile.fail()) {

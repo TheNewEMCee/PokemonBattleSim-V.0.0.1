@@ -16,5 +16,4 @@ public:
     int getNumLines();
 };
 
-
 #endif //NAME_CTXT_H
