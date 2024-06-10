@@ -1,4 +1,4 @@
-import java.io.BufferedReader;
+/*import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
@@ -17,7 +17,7 @@ public class Test {
 
 
         //Reading:
-        String line2 = Files.readAllLines(Paths.get(file.getAbsolutePath())).get(2); /*Read specific lines */
+        String line2 = Files.readAllLines(Paths.get(file.getAbsolutePath())).get(2); /*Read specific lines 
         System.out.println(line2);
 
 
@@ -32,7 +32,7 @@ public class Test {
 
         if ((line = br.readLine()) != null || br.readLine() != "") {
             bw.newLine();
-        } /* Adding new lines */
+        } /* Adding new lines 
         if ((line = br.readLine()) == null || br.readLine() == "") {
             File inputFile2 = new File("/Users/christineswann/Documents/GitHub/PokemonBattleSim-V.0.0.1/text/Data1.txt");
             File tempFile2 = new File("/Users/christineswann/Documents/GitHub/PokemonBattleSim-V.0.0.1/text/myTempFile.txt");
@@ -86,3 +86,4 @@ public class Test {
 
     }
 }
+*/
