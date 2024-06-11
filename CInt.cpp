@@ -31,6 +31,7 @@ CInt::CInt(std::string name, std::string path, int lineToReference, int value, b
         std::cerr << "In Thingy Failed in CInt constructor creation of " << name << "." << std::endl;
         std::cerr << "Error: " << std::strerror(errno) << std::endl;
         return;
+        //Hello
     }
     std::cout << "Boingo" << std::endl;
     std::vector<std::string> lineArray;
@@ -38,23 +39,20 @@ CInt::CInt(std::string name, std::string path, int lineToReference, int value, b
     int lineWeAreAt = 0;
     while (getline(inFile, line)) {
         lineWeAreAt++;
-        if (lineWeAreAt <= this->getLineToReference()) {
-            lineArray.push_back(line);
-            std::cout << "alijfkdnld" << std::endl;
-            }
+        lineArray.push_back(line);
+        std::cout << "alijfkdnld" << std::endl;
     }
     inFile.close();
-    while (lineToReference >= lineArray.size()) {
+    while (lineToReference >= lineArray.size() + 5) {
         std::cerr << "Error: lineToReference is out of range." << std::endl << "Add lines? Y/N" << std::endl;
         std::string userInput;
         std::cin >> userInput;
         bool goOn = false;
-
         do {
             if (userInput == "Y" || userInput == "y") {
                 std::cout << "Gotten here!" << std::endl;
                 std::ofstream outFile;
-                outFile.open(path);
+                outFile.open(this->getPath());
                 std::cout << "Gotten here, too!" << std::endl;
                 if (outFile.fail()) {
                     std::cerr << "Out Thingy Failed" << std::endl;
@@ -68,8 +66,6 @@ CInt::CInt(std::string name, std::string path, int lineToReference, int value, b
                 std::cout << "Huh?" << std::endl;
                 outFile.close();
                 goOn = true;
-
-
             } else if (userInput == "N" || userInput == "n") {
                 int newLineToReference;
                 std::cout << "What should the new line to reference be? The maximum is " << lineArray.size() - 1 << "." << std::endl;
@@ -78,17 +74,16 @@ CInt::CInt(std::string name, std::string path, int lineToReference, int value, b
                 return;
             }
             lineWeAreAt = 0;
-            std::ifstream inFile2;
-            inFile2.open(this->getPath());
-            inFile2.seekg(0, std::ios::beg);
+            inFile.open(this->getPath());
+            inFile.seekg(0, std::ios::beg);
             lineArray.clear();
-            while (getline(inFile2, line)) {
+            while (getline(inFile, line)) {
                 lineArray.push_back(line);
                 lineWeAreAt++;
             }
             std::cout << "goOn = " << goOn << std::endl;
             std::cout << "lineArray's size is " << lineArray.size() << std::endl;
-            inFile2.close();
+            inFile.close();
         } while (!goOn);
         lineArray.clear();
         while (getline(inFile, line)) {
@@ -96,6 +91,7 @@ CInt::CInt(std::string name, std::string path, int lineToReference, int value, b
             lineWeAreAt++;
         }
     }
+    inFile.open(this->getPath());
     std::cout << "Bongo" << std::endl;
     lineWeAreAt = 0;
     inFile.seekg(0, std::ios::beg);
@@ -104,26 +100,37 @@ CInt::CInt(std::string name, std::string path, int lineToReference, int value, b
         lineArray.push_back(line);
         lineWeAreAt++;
     }
-    if (getFromConst) {
-        this->setValue(stoi(lineArray.at(lineToReference)));
-    }
-    std::ofstream outFile;
-    outFile.open(path);
-    if (outFile.fail()) {
-        std::cerr << "Out Thingy Failed" << std::endl;
-    } else {
-        inFile.close();
-    }
-    lineArray[lineToReference] = std::to_string(value);
-    for (int i = 0; i < lineArray.size(); i++) {
-        outFile << lineArray.at(i);
-    }
-    if (getFromConst) {
-        this->value = stoi(lineArray.at(lineToReference));
-    }
+    std::cout << "hor" << std::endl;
     inFile.close();
-    outFile.close();
 
+    std::cout << "106" << std::endl;
+    if (getFromConst) {
+        if (!lineArray.at(this->getLineToReference()).empty()) {
+            std::cout << "Hooray?" << std::endl;
+            this->setValue(stoi(lineArray.at(getLineToReference())));
+            std::cout << "Hooray." << std::endl;
+        } else {
+            std::cout << "Hooray2?" << std::endl;
+            this->setValue(0);
+            std::cout << "Hooray2." << std::endl;
+        }
+    } else {
+        std::cout << "Hooray3?" << std::endl;
+        std::ofstream outFile;
+        outFile.open(path);
+        if (outFile.fail()) {
+            std::cerr << "Out Thingy Failed" << std::endl;
+            std::cerr << "Error: " << std::strerror(errno) << std::endl;
+        }
+        std::cout << "Horango" << std::endl;
+        lineArray[lineToReference] = std::to_string(value);
+
+        for (int i = 0; i < lineArray.size(); i++) {
+            outFile << lineArray.at(i);
+        }
+        outFile.close();
+    }
+    std::cout << "Bango" << std::endl;
 }
 
 CInt::CInt(const CInt &ci) : CVar(ci), value(ci.value) {
